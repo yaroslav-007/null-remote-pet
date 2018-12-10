@@ -2,7 +2,7 @@
 data "terraform_remote_state" "pet" {
   backend = "atlas"
   config {
-    name = "yaro-org/random_pet"
+    name = "yaro-org/tf-random"
   }
 }
 
