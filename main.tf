@@ -9,6 +9,6 @@ data "terraform_remote_state" "pet" {
 
 resource "null_resource" "helloWorld" {
   provisioner "local-exec" {
-    command = "echo This generates name the following hostname  web-${data.terraform_remote_state.pet.name}"
+    command = "echo This generates name the following hostname  ${data.terraform_remote_state.pet.name}"
   }
 }
